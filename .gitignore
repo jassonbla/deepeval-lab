@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.env
+.env.local
+.deepeval/
+results/
+.llm_cwd/
+server/dist/
+.pytest_cache/

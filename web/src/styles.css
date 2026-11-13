@@ -57,6 +57,11 @@ body {
   gap: 0.5rem;
 }
 
+.scheme-picker [data-slot="segmented-control-item"] {
+  width: calc(var(--ui-spacing) * 7);
+  padding: 0;
+}
+
 .masthead-row a {
   gap: 0.4rem;
   text-decoration: none;

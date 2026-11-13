@@ -7,3 +7,5 @@ results/
 .llm_cwd/
 server/dist/
 .pytest_cache/
+.vercel
+.env*

@@ -4,6 +4,8 @@ A small lab for learning LLM evaluation by improving one bot.
 
 It builds a support bot for a made-up shop, grades it with [DeepEval](https://github.com/confident-ai/deepeval), and records every change next to its score. The bot and the judge both run on `claude -p`, so there is no API key to set up.
 
+**[See the results](https://deepeval-lab.vercel.app)**
+
 ![Case comparison with one cell open: golden g10 failed after the last change, and the judge's reason is shown beside it.](assets/case-comparison.png)
 
 ## What it shows
@@ -117,3 +119,7 @@ web/        The viewer's source, and the committed snapshot
 - **Claude reviewed the synthetic goldens**, not a person.
 - **The last prompt was tuned on its own test set.** There is no held-out split, so its score is optimistic.
 - **A custom judge must return a schema instance.** DeepEval's metrics accept a string and parse it. Its Synthesizer does not. `lab/claude_model.py` handles both.
+
+## License
+
+[MIT](LICENSE)

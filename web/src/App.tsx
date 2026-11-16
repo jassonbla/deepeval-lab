@@ -102,9 +102,8 @@ function App() {
 
   return (
     <Preferences preferences={[colorScheme]}>
-    <>
-    <Analytics />
-    <div className="page">
+      <Analytics />
+      <div className="page">
       <header className="masthead">
         <div className="masthead-row">
           <h1>DeepEval Lab</h1>
@@ -187,8 +186,7 @@ function App() {
           )}
         </Tabs>
       ) : null}
-    </div>
-    </>
+      </div>
     </Preferences>
   )
 }

@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { Button } from "@ui-sdk/react/button"
 import { Preferences, usePreference } from "@ui-sdk/react/preferences"
 import { Tabs, TabsList, TabsPanel, TabsTab } from "@ui-sdk/react/tabs"
@@ -101,6 +102,8 @@ function App() {
 
   return (
     <Preferences preferences={[colorScheme]}>
+    <>
+    <Analytics />
     <div className="page">
       <header className="masthead">
         <div className="masthead-row">
@@ -185,6 +188,7 @@ function App() {
         </Tabs>
       ) : null}
     </div>
+    </>
     </Preferences>
   )
 }
